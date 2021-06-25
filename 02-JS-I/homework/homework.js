@@ -73,8 +73,8 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-     return str1.lenght === str2.lenght ;
-
+    return str1.length === str2.length; 
+   
      }
        
       
@@ -142,14 +142,14 @@ function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
 
-   return math.pow (num, exponent)
+   return Math.pow(num, exponent);
   }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
    
-  return math.round (num) 
+  return Math.round(num); 
 }
 
 function redondearHaciaArriba(num) {
@@ -173,29 +173,29 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
 
   if (numero > 0) {
-   return "Es positivo" 
-}  else if (numero < 0)
-  {  return "Es negativo"
-}
-  else (numero === 0)
-  { return false
-    }
+    return "Es positivo" 
+  } else if (numero < 0) {
+    return "Es negativo"
+  } else { 
+    return false
+  }
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-var saludo = "Soy Henry"; 
-{ return saludo + "!" }
-            
+  str = str + "!"
+  return str  
+         
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre + "" + apellido ;
+
+  var combinado = nombre + " " + apellido ;
   
     return combinado; 
   }
@@ -245,7 +245,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
 
-  if (letra.lenght > 1)  {
+  if (letra.length > 1)  { 
     return "Dato incorrecto"
       }
 
